@@ -62,8 +62,8 @@
 
         #heart-container {
             position: relative;
-            width: 600px;
-            height: 600px;
+            width: 700px;
+            height: 700px;
             transform-style: preserve-3d;
             animation: heartBeat 2s infinite ease-in-out;
         }
@@ -362,18 +362,13 @@
 
     <button id="music-control">🎵 Play Music</button>
     <audio id="background-music" loop>
-        <source src="love-song.mp3" type="audio/mpeg">
+        <source src="music.mp3" type="audio/mpeg">
     </audio>
 
     <script>
         const heartPoints = [];
         const timelineEvents = [
-            { text: "First Sight", position: { x: 30, y: 30 } },
-            { text: "First Date", position: { x: 70, y: 30 } },
-            { text: "First Kiss", position: { x: 20, y: 50 } },
-            { text: "I Love You", position: { x: 80, y: 50 } },
-            { text: "Forever", position: { x: 50, y: 70 } }
-        ];
+          
 
         function generateHeartPoints() {
             for (let t = 0; t <= Math.PI * 2; t += 0.1) {
